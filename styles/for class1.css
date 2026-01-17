@@ -229,3 +229,60 @@ input[type=text], [type=email], footer textarea{
     border: none;
     color: rgba(117, 117, 117, 1);
 }
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .skill-container, .resume-container, .about-items, footer, .banner{
+        flex-direction: column;
+    }
+    header{
+        background-image: none;
+    }
+
+    nav{
+        margin: 0px;
+    }
+
+    nav ul li{
+        margin-right: 15px;
+    }
+
+    .button-primary{
+        padding: 8px 15px;
+    }
+
+    .banner{
+        margin: 10px;
+    }
+
+    .banner-image{
+        height: 100%;
+        width: 100%;
+    }
+
+    .about, footer, .resume-column{
+        padding: 10px;
+    }
+
+    .resume-column-main-title{
+        margin-top: 0px;
+    }
+
+    footer{
+        gap: 20px;
+    }
+
+    .footer-column{
+        width: 100%;
+    }
+
+    input[type=text], [type=email], footer textarea{
+        width: calc(100% - 40px);
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 990px) {
+    .banner{
+        flex-direction: column;
+    }
+}
